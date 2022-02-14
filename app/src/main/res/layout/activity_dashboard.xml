@@ -1,0 +1,42 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/login_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="Add Student"
+        android:background="@color/button_color"
+        android:id="@+id/stud"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:background="@color/button_color"
+        android:layout_height="wrap_content"
+        android:id="@+id/fa"
+        android:layout_margin="10dp"
+        android:text="Add Faculty"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:background="@color/button_color"
+        android:layout_height="wrap_content"
+        android:id="@+id/sec"
+        android:layout_margin="10dp"
+        android:text=" Search student"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:background="@color/button_color"
+        android:layout_height="wrap_content"
+        android:id="@+id/fac"
+        android:layout_margin="10dp"
+        android:text="Search Faculty"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:background="@color/button_color"
+        android:layout_height="wrap_content"
+        android:id="@+id/web"
+        android:layout_margin="10dp"
+        android:text="View Web site"/>
+</LinearLayout>
