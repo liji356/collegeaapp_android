@@ -7,23 +7,25 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Name"/>
+        android:text="Name"
+        android:layout_margin="10dp"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
         android:layout_height="wrap_content"
-        android:id="@+id/name"/>
+        android:id="@+id/na"
+        android:layout_margin="10dp"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Search"
-        android:id="@+id/search"
+        android:background="@color/button_color"
+        android:id="@+id/se"
         android:layout_margin="10dp"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go to dashboard"
-        android:id="@+id/dashboard"
-        android:layout_margin="10dp"/>
+        android:text="Back To Dashboard"
+        android:id="@+id/da"
+        android:layout_margin="10dp"
+        android:background="@color/button_color"/>
 </LinearLayout>

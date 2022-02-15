@@ -1,15 +1,16 @@
 package com.example.collegeapp;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
 public class DashboardActivity extends AppCompatActivity {
-    AppCompatButton b1,b2,b3,b4,b5;
+    AppCompatButton b1,b2,b3,b4,b5,b6;
 
+    SharedPreferences MyPreferences;
 
 
     @Override
@@ -21,6 +22,9 @@ public class DashboardActivity extends AppCompatActivity {
         b3=(AppCompatButton) findViewById(R.id.sec);
         b4=(AppCompatButton) findViewById(R.id.fac);
         b5=(AppCompatButton) findViewById(R.id.web);
+        b6=(AppCompatButton) findViewById(R.id.log);
+
+        MyPreferences=getSharedPreferences("login",MODE_PRIVATE);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +50,7 @@ public class DashboardActivity extends AppCompatActivity {
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(getApplicationContext(),AddfacultyActivity.class);
+                Intent i =new Intent(getApplicationContext(),AddsearchfacultyActivity.class);
                 startActivity(i);
 
 
@@ -57,6 +61,20 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=new Intent(getApplicationContext(),WebsiteActivity.class);
                 startActivity(i);
+            }
+        });
+        b6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences.Editor MyEdit=MyPreferences.edit();
+                        MyEdit.clear();
+                        MyEdit.commit();
+                Intent i=new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+
+
+
+
             }
         });
 

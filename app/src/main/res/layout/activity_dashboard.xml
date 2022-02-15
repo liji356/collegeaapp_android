@@ -39,4 +39,11 @@
         android:id="@+id/web"
         android:layout_margin="10dp"
         android:text="View Web site"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:background="@color/button_color"
+        android:layout_margin="10dp"
+        android:id="@+id/log"/>
 </LinearLayout>
